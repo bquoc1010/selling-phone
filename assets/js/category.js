@@ -14,7 +14,7 @@ fetchApi(API_CATEGORY)
 
         //console.log(htmls.join());
         const categories = document.querySelector("#category");
-        categories.innerHTML = htmls.join();
+        categories.innerHTML = htmls.join('');
         const listCategory = document.querySelectorAll("#category .category__item");
         listCategory.forEach(item=>{
             item.addEventListener("click", function(){

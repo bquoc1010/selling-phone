@@ -31,7 +31,7 @@ export const drawProduct = () => {
             
             `;
             })
-            products.innerHTML = htmls.join();
+            products.innerHTML = htmls.join('');
         });
 
 }
