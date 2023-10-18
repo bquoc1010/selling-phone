@@ -51,7 +51,7 @@ filter.addEventListener("change", function(e){
 // pagination
 
 pagiPrev.addEventListener("click", function(){
-    if(params.page>1){
+    if(parseInt(params.page)>1){
         parseInt(params.page)-=1;
         pagiNumber.innerHTML = params.page;
         drawProduct();
