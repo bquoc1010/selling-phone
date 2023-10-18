@@ -16,7 +16,7 @@ fetchApi(API_CATEGORY)
         const categories = document.querySelector("#category");
         categories.innerHTML = htmls.join(" ");
         const listCategory = document.querySelectorAll("#category .category__item");
-        listCategory.forEach(item=>{
+        [...listCategory].forEach(item=>{
             item.addEventListener("click", function(){
                 params.category = item.getAttribute("data__category");
                 drawProduct();
